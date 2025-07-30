@@ -1,0 +1,1276 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner-Operator Acquisition Strategy - RND SAFE CARGO INC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --coral-primary: #C67B5C;
+            --coral-light: #D4906F;
+            --sage-green: #8FA68E;
+            --sage-light: #A4B8A3;
+            --cream: #F4F1ED;
+            --warm-white: #FEFCFA;
+            --charcoal: #2C2C2C;
+            --text-dark: #1A1A1A;
+            --text-medium: #4A4A4A;
+            --text-light: #7A7A7A;
+        }
+        
+        body {
+            font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--warm-white);
+            font-weight: 400;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--text-dark);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--warm-white);
+            box-shadow: 0 0 40px rgba(44, 44, 44, 0.08);
+        }
+        
+        .header {
+            background: var(--cream);
+            padding: 60px 40px;
+            text-align: left;
+            border-bottom: 1px solid rgba(140, 118, 98, 0.15);
+            position: relative;
+        }
+        
+        .brand-name {
+            font-family: 'Lora', serif;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 40px;
+            letter-spacing: -0.02em;
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+        
+        .header .subtitle {
+            font-family: 'Satoshi', sans-serif;
+            font-size: 1.3em;
+            color: var(--text-medium);
+            font-weight: 500;
+            letter-spacing: -0.01em;
+        }
+        
+        .content {
+            padding: 60px 40px;
+        }
+        
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .overview-card {
+            background: var(--warm-white);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(140, 118, 98, 0.12);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+        }
+        
+        .overview-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--coral-primary), var(--sage-green));
+            border-radius: 12px 12px 0 0;
+        }
+        
+        .overview-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(44, 44, 44, 0.1);
+            border-color: var(--coral-light);
+        }
+        
+        .overview-card h3 {
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        
+        .overview-card p {
+            color: var(--text-medium);
+            font-weight: 500;
+            font-size: 1.05em;
+        }
+        
+        .investment-summary {
+            background: linear-gradient(135deg, var(--coral-primary), var(--coral-light));
+            color: var(--warm-white);
+            padding: 50px 40px;
+            border-radius: 16px;
+            margin: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .investment-summary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+            opacity: 0.6;
+        }
+        
+        .investment-summary h2 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            color: var(--warm-white);
+        }
+        
+        .investment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .investment-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .investment-item h4 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+            color: var(--warm-white);
+            font-weight: 700;
+        }
+        
+        .investment-item p {
+            opacity: 0.95;
+            font-weight: 500;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+            margin: 40px 0;
+            border-radius: 16px;
+            border: 1px solid rgba(140, 118, 98, 0.12);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--warm-white);
+            font-family: 'Satoshi', sans-serif;
+        }
+        
+        th, td {
+            padding: 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(140, 118, 98, 0.1);
+            font-weight: 500;
+        }
+        
+        th {
+            background: var(--cream);
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95em;
+            letter-spacing: 0.01em;
+        }
+        
+        tr:hover {
+            background: rgba(244, 241, 237, 0.5);
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .phase-section {
+            margin: 60px 0;
+            border: 1px solid rgba(140, 118, 98, 0.12);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            background: var(--warm-white);
+        }
+        
+        .phase-section:hover {
+            border-color: var(--coral-light);
+            box-shadow: 0 12px 40px rgba(198, 123, 92, 0.12);
+            transform: translateY(-2px);
+        }
+        
+        .phase-header {
+            background: linear-gradient(135deg, var(--sage-green), var(--sage-light));
+            color: var(--warm-white);
+            padding: 40px;
+            position: relative;
+        }
+        
+        .phase-header h2 {
+            font-size: 2em;
+            margin-bottom: 12px;
+            color: var(--warm-white);
+            font-weight: 700;
+        }
+        
+        .phase-header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        
+        .phase-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .phase-meta span {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            font-weight: 500;
+        }
+        
+        .phase-content {
+            padding: 40px;
+        }
+        
+        .phase-content h3 {
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            margin-top: 30px;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+        
+        .phase-content h3:first-child {
+            margin-top: 0;
+        }
+        
+        .phase-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .phase-content li {
+            padding: 4px 0;
+            position: relative;
+            padding-left: 30px;
+            color: var(--text-medium);
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        
+        .phase-content li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--coral-primary);
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .deliverables {
+            background: var(--cream);
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 30px;
+            border-left: 4px solid var(--coral-primary);
+        }
+        
+        .deliverables h4 {
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        
+        .deliverables ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .deliverables li {
+            padding: 4px 0;
+            position: relative;
+            padding-left: 30px;
+            color: var(--text-medium);
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        
+        .deliverables li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--sage-green);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .timeline-section {
+            background: var(--cream);
+            padding: 50px 40px;
+            border-radius: 16px;
+            margin: 60px 0;
+            border: 1px solid rgba(140, 118, 98, 0.08);
+        }
+        
+        .timeline-section h2 {
+            color: var(--text-dark);
+            margin-bottom: 40px;
+            font-size: 2.2em;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .timeline-section h3 {
+            color: var(--text-dark);
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .metric-card {
+            background: var(--warm-white);
+            padding: 30px 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(44, 44, 44, 0.08);
+            border: 1px solid rgba(140, 118, 98, 0.12);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--coral-light);
+            box-shadow: 0 8px 30px rgba(198, 123, 92, 0.15);
+        }
+        
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--coral-primary);
+            margin-bottom: 12px;
+            font-family: 'Lora', serif;
+            letter-spacing: -0.02em;
+        }
+        
+        .metric-card p {
+            color: var(--text-medium);
+            font-weight: 500;
+            font-size: 1.05em;
+            line-height: 1.4;
+        }
+        
+        .metric-card small {
+            color: var(--text-light);
+            font-size: 0.85em;
+        }
+        
+        .payment-schedule {
+            background: var(--warm-white);
+            padding: 40px;
+            border-radius: 16px;
+            margin: 60px 0;
+            border: 1px solid rgba(140, 118, 98, 0.12);
+            box-shadow: 0 4px 20px rgba(44, 44, 44, 0.05);
+        }
+        
+        .payment-schedule h2 {
+            color: var(--text-dark);
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        
+        .payment-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(140, 118, 98, 0.1);
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .payment-item:last-child {
+            border-bottom: none;
+        }
+        
+        .payment-item strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        
+        .payment-status {
+            background: var(--sage-green);
+            color: var(--warm-white);
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.85em;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            box-shadow: 0 2px 8px rgba(143, 166, 142, 0.3);
+        }
+        
+        .guarantees {
+            background: linear-gradient(135deg, var(--sage-green), var(--sage-light));
+            color: var(--warm-white);
+            padding: 50px 40px;
+            border-radius: 16px;
+            margin: 60px 0;
+        }
+        
+        .guarantees h2 {
+            color: var(--warm-white);
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .guarantee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .guarantee-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .guarantee-item h4 {
+            color: var(--warm-white);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .guarantee-item p {
+            opacity: 0.95;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--coral-primary), var(--coral-light));
+            color: var(--warm-white);
+            padding: 60px 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin: 60px 0;
+        }
+        
+        .cta-section h2 {
+            color: var(--warm-white);
+            margin-bottom: 20px;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+        
+        .cta-section p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        
+        .cta-button {
+            background: var(--warm-white);
+            color: var(--coral-primary);
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            font-family: 'Satoshi', sans-serif;
+            letter-spacing: 0.01em;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(198, 123, 92, 0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(198, 123, 92, 0.3);
+            background: var(--cream);
+        }
+        
+        .highlight {
+            background: var(--cream);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid var(--coral-primary);
+        }
+        
+        .highlight p {
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 1.05em;
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+                text-align: center;
+            }
+            
+            .header h1 {
+                font-size: 2.5em;
+            }
+            
+            .content {
+                padding: 40px 20px;
+            }
+            
+            .phase-meta {
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            .payment-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .investment-summary,
+            .guarantees,
+            .cta-section {
+                padding: 40px 20px;
+            }
+        }
+        
+        .roi-highlight {
+            background: linear-gradient(135deg, var(--sage-green), var(--sage-light));
+            color: var(--warm-white);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .roi-highlight h3 {
+            color: var(--warm-white);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .roi-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .roi-stat {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .roi-stat .number {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-family: 'Lora', serif;
+            letter-spacing: -0.02em;
+        }
+        
+        .roi-stat .label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="brand-name">caste//s.media</div>
+            <h1>Owner-Operator Acquisition Strategy</h1>
+            <div class="subtitle">RND SAFE CARGO INC - Miami / Fort Lauderdale</div>
+        </div>
+        
+        <div class="content">
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>Client</h3>
+                    <p>RND SAFE CARGO INC (Transportation Company)</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Location</h3>
+                    <p>Miami / Fort Lauderdale, Florida</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Services</h3>
+                    <p>Freight transportation, owner-operator recruitment, dispatch services</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Contact</h3>
+                    <p>Ruslan A.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Phone Number</h3>
+                    <p><a href="tel:+17547772011" style="color: var(--coral-primary); text-decoration: none;">+1 (754) 777-2011</a></p>
+                </div>
+                <div class="overview-card">
+                    <h3>Proposal Date</h3>
+                    <p>July 29, 2025</p>
+                </div>
+            </div>
+
+            <div class="timeline-section">
+                <h2>Dear Ruslan, Welcome!</h2>
+                
+                <div class="highlight">
+                    <p>We have carefully prepared this comprehensive business proposal specifically for growing your transportation company and attracting quality owner-operators. Here you'll find detailed work phases - from brand creation and landing page development to targeted advertising launch and owner-operator lead generation. We've structured everything to make your decision-making process as clear as possible.<br><br>Our approach focuses on building <strong>trust and transparency</strong> - crucial elements in the transportation industry where many companies struggle with reputation issues. We'll help you stand out as a reliable, professional operation that owner-operators can trust.</p>
+                </div>
+
+                <div style="text-align: center; margin: 40px 0; padding: 30px; background: var(--cream); border-radius: 12px;">
+                    <p style="font-size: 1.2em; font-weight: 600; color: var(--text-dark); margin-bottom: 20px;">
+                        <strong>Thank you for considering working with us!</strong>
+                    </p>
+                    <div style="font-family: 'Lora', serif;">
+                        <p style="font-size: 1.3em; font-weight: 700; color: var(--text-dark); margin-bottom: 5px;">Dmitriy</p>
+                        <p style="font-style: italic; color: var(--text-medium); font-size: 1.05em;">Head of Customer Service</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-section">
+                <h2>The Transportation Industry Challenge</h2>
+                <div class="highlight">
+                    <p>The trucking industry has a serious trust problem. Many companies deceive drivers, and many drivers try to deceive companies. This creates a "gray zone" where everyone is trying to outsmart each other. <strong>Your goal is to break this cycle by positioning RND SAFE CARGO INC as the most transparent, reliable, and trustworthy option in South Florida.</strong></p>
+                </div>
+                <h3 style="text-align:center; margin-top: 50px;">Building Trust in Transportation</h3>
+                <p style="text-align:center; max-width: 800px; margin: 0 auto 40px auto;">Our strategy focuses on creating a professional, trustworthy image that immediately communicates reliability to potential owner-operators. When drivers see your professional branding, website, and advertising, they'll know this is a company that won't deceive them.</p>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <p style="font-size: 1.2em; font-weight: 600; color: var(--text-dark);">Professional Brand Identity</p>
+                        <p>A strong visual identity that communicates stability and professionalism in every touchpoint</p>
+                    </div>
+                    <div class="metric-card">
+                        <p style="font-size: 1.2em; font-weight: 600; color: var(--text-dark);">Transparent Communication</p>
+                        <p>Clear, honest messaging about rates, terms, and conditions - no hidden surprises</p>
+                    </div>
+                    <div class="metric-card">
+                        <p style="font-size: 1.2em; font-weight: 600; color: var(--text-dark);">Immediate Response</p>
+                        <p>Professional lead handling system that responds within minutes, not hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h2>Phase 1: Brand Identity Development</h2>
+                    <p>Creating professional branding for RND SAFE CARGO INC</p>
+                    <div class="phase-meta">
+                        <span>Timeline: 2-3 weeks</span>
+                        <span>Cost: $1,250</span>
+                        <span>Hourly Rate: $66/hour</span>
+                    </div>
+                </div>
+                <div class="phase-content">
+                    <h3>Logo Book Package</h3>
+                    <div class="highlight">
+                        <p><strong>For:</strong> Perfect for transportation companies that need a professional identity to build trust with owner-operators</p>
+                    </div>
+                    <ul>
+                        <li>Research and competitor analysis in Miami/Fort Lauderdale transportation market</li>
+                        <li>Development of 3-5 logo concepts for RND SAFE CARGO INC</li>
+                        <li>Creation of final logo with 2-3 variations (horizontal, vertical, icon-only)</li>
+                        <li>Transportation industry-appropriate color palette</li>
+                        <li>Logo files in vector and raster formats for all applications</li>
+                        <li>Basic usage guidelines (colors, sizes, spacing, truck branding basics)</li>
+                        <li>Simple brand guide (8-12 pages) with logo application examples</li>
+                        <li>Templates for business cards and basic stationery</li>
+                    </ul>
+
+                    <div class="deliverables">
+                        <h4>What You'll Receive</h4>
+                        <ul>
+                            <li>Professional logo that builds trust with owner-operators</li>
+                            <li>Ready-to-use brand assets for all marketing materials</li>
+                            <li>Guidelines for consistent brand application</li>
+                            <li>Foundation for professional advertising campaigns</li>
+                        </ul>
+                    </div>
+
+                    <div class="roi-highlight">
+                        <h3>Why This Matters for Transportation</h3>
+                        <p>In an industry where trust is everything, professional branding immediately communicates that you're a legitimate, stable company. Owner-operators will feel more confident working with a company that invests in its professional appearance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h2>Phase 2: Landing Page Development</h2>
+                    <p>High-converting landing page for owner-operator recruitment</p>
+                    <div class="phase-meta">
+                        <span>Timeline: 3-4 weeks</span>
+                        <span>Cost: $1,500</span>
+                        <span>Hourly Rate: $66/hour</span>
+                    </div>
+                </div>
+                <div class="phase-content">
+                    <h3>Owner-Operator Focused Landing Page</h3>
+                    <div class="highlight">
+                        <p><strong>For:</strong> Designed specifically to convert truck drivers into applicants with minimal investment and maximum results.</p>
+                    </div>
+                    <ul>
+                        <li>Professional design optimized for transportation industry conversions</li>
+                        <li>Mobile-first responsive layout (most drivers browse on phones)</li>
+                        <li>Trust-building elements: licensing info, years in business, safety records</li>
+                        <li>Clear value proposition and competitive advantages</li>
+                        <li>Easy-to-complete application forms</li>
+                        <li>Multiple contact methods (phone, WhatsApp, form)</li>
+                        <li>Fast loading speed (90+ PageSpeed) for better ad performance</li>
+                        <li>Integration with lead tracking systems</li>
+                        <li>Professional content focusing on transparency and reliability</li>
+                    </ul>
+                    
+                    <h3>Landing Page Features</h3>
+                     <ul>
+                        <li>Hero section with strong value proposition</li>
+                        <li>Benefits section (pay rates, home time, support)</li>
+                        <li>Requirements section (licenses, experience)</li>
+                        <li>Application form with instant lead delivery</li>
+                        <li>Contact information and multiple communication channels</li>
+                        <li>Mobile-optimized for truck drivers on the go</li>
+                    </ul>
+
+                    <div class="roi-highlight">
+                        <h3>Focused Approach for Quick Results</h3>
+                        <p>A dedicated landing page allows you to test the market quickly and start generating owner-operator leads immediately. Perfect for validating your offer and understanding what resonates with drivers in South Florida.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h2>Phase 3: Meta Ads Campaign Launch</h2>
+                    <p>Targeted Facebook & Instagram advertising for owner-operators</p>
+                    <div class="phase-meta">
+                        <span>Minimum contract: 3 or 6 months</span>
+                        <span>Multiple creative testing approach</span>
+                    </div>
+                </div>
+                <div class="phase-content">
+                    <h3>Meta Ads (Facebook & Instagram)</h3>
+                     <div class="highlight">
+                        <p>The most effective platform for reaching owner-operators and truck drivers in South Florida. Precise targeting allows us to show your ads only to qualified candidates.</p>
+                    </div>
+                    
+                    <h3>Why Meta Ads for Transportation Recruitment</h3>
+                    <ul>
+                        <li>Direct access to owner-operators and truck drivers on social media</li>
+                        <li>Precise targeting by location (South Florida focus)</li>
+                        <li>Interest-based targeting (trucking, logistics, transportation)</li>
+                        <li>Job title targeting (truck drivers, owner-operators)</li>
+                        <li>Multiple ad formats: video testimonials, image ads, carousel showcases</li>
+                        <li>WhatsApp lead generation for immediate communication</li>
+                        <li>Retargeting website visitors who didn't apply initially</li>
+                        <li>A/B testing of messages, visuals, and offers</li>
+                    </ul>
+
+                    <h3>Campaign Strategy</h3>
+                    <ul>
+                        <li>Russian-speaking driver campaigns (higher conversion, smaller audience)</li>
+                        <li>General English-speaking driver campaigns (larger volume, broader reach)</li>
+                        <li>Competitive rate messaging and transparency focus</li>
+                        <li>Multiple creative variations (owner testimonials, truck showcases, rate highlights)</li>
+                        <li>Geographic targeting across South Florida transportation hubs</li>
+                        <li>Budget optimization across best-performing campaigns</li>
+                    </ul>
+
+                    <h3>Advertising Contract Comparison</h3>
+                    <div class="table-responsive" style="margin: 30px 0;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--warm-white); font-family: 'Satoshi', sans-serif; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(44, 44, 44, 0.08);">
+                            <thead>
+                                <tr style="background: var(--cream);">
+                                    <th style="padding: 20px; text-align: left; font-weight: 600; color: var(--text-dark); font-size: 0.95em;">Contract Length</th>
+                                    <th style="padding: 20px; text-align: center; font-weight: 600; color: var(--text-dark); font-size: 0.95em;">Monthly Service Cost</th>
+                                    <th style="padding: 20px; text-align: center; font-weight: 600; color: var(--text-dark); font-size: 0.95em;">Total Savings</th>
+                                    <th style="padding: 20px; text-align: center; font-weight: 600; color: var(--text-dark); font-size: 0.95em;">Best For</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid rgba(140, 118, 98, 0.1);" onmouseover="this.style.background='rgba(244, 241, 237, 0.5)'" onmouseout="this.style.background='transparent'">
+                                    <td style="padding: 20px; font-weight: 600; color: var(--text-dark);">3 Months</td>
+                                    <td style="padding: 20px; color: var(--text-medium); font-weight: 600; text-align: center;">$1,250/month</td>
+                                    <td style="padding: 20px; color: var(--text-medium); text-align: center;">-</td>
+                                    <td style="padding: 20px; color: var(--text-medium); text-align: center;">Market Testing</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(140, 118, 98, 0.1);" onmouseover="this.style.background='rgba(244, 241, 237, 0.5)'" onmouseout="this.style.background='transparent'">
+                                    <td style="padding: 20px; font-weight: 600; color: var(--text-dark);">6 Months (Recommended)</td>
+                                    <td style="padding: 20px; color: var(--coral-primary); font-weight: 600; text-align: center;">$1,000/month</td>
+                                    <td style="padding: 20px; color: var(--sage-green); font-weight: 700; text-align: center;">$1,500 saved</td>
+                                    <td style="padding: 20px; color: var(--text-medium); text-align: center;">Serious Growth</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="highlight">
+                        <p><strong>Ad Budget:</strong> Separate from service costs. Recommended starting budget: $3,000-4,000/month for effective lead generation. Expected cost per owner-operator lead: $15-30 depending on targeting and market conditions.</p>
+                    </div>
+
+                    <div class="deliverables">
+                        <h4>What's Included</h4>
+                        <ul>
+                            <li>Complete campaign setup and optimization</li>
+                            <li>Multiple creative variations and A/B testing</li>
+                            <li>Precise audience targeting and retargeting</li>
+                            <li>Weekly performance reports and optimization</li>
+                            <li>Lead tracking and quality monitoring</li>
+                            <li>Ongoing campaign management and improvements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="timeline-section">
+                <h2>Expected Results & Investment</h2>
+                <div class="metrics-grid">
+                     <div class="metric-card">
+                        <div class="metric-value">$15-30</div>
+                        <p>Cost per qualified owner-operator lead</p>
+                        <small>Based on similar transportation campaigns</small>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">5-15%</div>
+                        <p>Lead to hire conversion rate</p>
+                        <small>Depends on your offer and follow-up process</small>
+                    </div>
+                     <div class="metric-card">
+                        <div class="metric-value">100+</div>
+                        <p>Leads needed for 10 new drivers</p>
+                        <small>Conservative 10% conversion estimate</small>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$3-4K</div>
+                        <p>Monthly ad budget recommended</p>
+                        <small>For consistent lead flow</small>
+                    </div>
+                </div>
+
+                <div class="roi-highlight">
+                <h3>Investment Breakdown for 10 New Owner-Operators/Month</h3>
+                    <div class="roi-stats">
+                        <div class="roi-stat">
+                            <div class="number">$2,750</div>
+                            <div class="label">One-time setup<br><small>Brand + Landing Page</small></div>
+                        </div>
+                        <div class="roi-stat">
+                            <div class="number">$1,000</div>
+                            <div class="label">Monthly service<br><small>6-month contract</small></div>
+                        </div>
+                        <div class="roi-stat">
+                            <div class="number">$3,500</div>
+                            <div class="label">Monthly ad budget<br><small>~115 leads @ $30 each</small></div>
+                        </div>
+                        <div class="roi-stat">
+                            <div class="number">$450</div>
+                            <div class="label">Cost per new driver<br><small>Total monthly cost ÷ 10</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h2 style="font-size: 1.8em;">Our Collaboration Model: Transparency and Flexibility</h2>
+                    <p style="font-size: 1.1em;">We build our work on principles of honest partnership.</p>
+                </div>
+                <div class="phase-content">
+                    <div class="metrics-grid">
+                        <div class="metric-card" style="text-align: left; padding: 25px;">
+                            <h3 style="font-weight: 600; font-size: 1.1em; color: var(--text-dark); margin-bottom: 15px;">Working Principle</h3>
+                            <p style="font-size: 1.05em; font-weight: 500; color: var(--text-medium); line-height: 1.5;">Hourly contracts only. We don't work on fixed-price basis.</p>
+                        </div>
+                        <div class="metric-card" style="text-align: left; padding: 25px;">
+                            <h3 style="font-weight: 600; font-size: 1.1em; color: var(--text-dark); margin-bottom: 15px;">Base Rate</h3>
+                            <p style="font-size: 1.05em; font-weight: 500; color: var(--text-medium); line-height: 1.5;"><strong>$66 USD per hour.</strong> Rate may vary slightly depending on complexity and specifics of particular tasks.</p>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 20px;">Why Hourly Model is the Best Choice for Your Business?</h3>
+                    <div class="highlight">
+                        <p>We believe hourly billing is the most honest, flexible, and profitable system for clients in the long run. Unlike fixed-price projects where all possible risks are built into the cost upfront (always increasing the final bill), our approach is based on complete transparency.</p>
+                    </div>
+                    
+                    <h4 style="margin-top: 30px; margin-bottom: 15px; font-size: 1.2em;">Key Benefits for You:</h4>
+                    <ul>
+                        <li>
+                            <strong>Maximum flexibility.</strong> Business goals can change. The hourly model allows us to easily adapt, add new features, or change priorities without complex negotiations and contract revisions.
+                        </li>
+                        <li>
+                            <strong>You pay only for actual work.</strong> You see what every hour of our time was spent on. If a task is completed faster than planned - you save money.
+                        </li>
+                        <li>
+                            <strong>Focus on quality, not speed.</strong> In fixed-price projects, contractors are tempted to "cut corners" to fit the budget. Our goal is to create a quality product that brings results.
+                        </li>
+                        <li>
+                            <strong>Complete transparency and control.</strong> You always have access to reports on work completed and time spent through Monday.com project management system.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+             <div class="timeline-section">
+                <h2>Our Guarantees</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Lead Generation Guarantee</h3>
+                        <p>If within 60 days you don't receive qualified owner-operator leads at promised rates, we'll work for free until goals are achieved or return 70% of service costs.</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Landing Page Performance</h3>
+                        <p>We guarantee your landing page will achieve 90+ PageSpeed score and convert at industry-standard rates for transportation recruitment.</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Brand Identity Guarantee</h3>
+                        <p>We guarantee 3 unique logo concepts and up to 5 revision rounds until you're completely satisfied with your brand identity.</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Complete Transparency</h3>
+                        <p>Full reporting on all activities, weekly updates, and complete visibility into campaign performance and optimizations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-section">
+                <h2>Project Timeline</h2>
+                <h3>Complete RND SAFE CARGO INC Owner-Operator Acquisition System</h3>
+                
+                <div style="position: relative; background: var(--warm-white); padding: 30px 30px 30px 80px; border-radius: 12px; margin: 30px 0;">
+                    <div style="position: absolute; left: 50px; top: 50px; bottom: 50px; width: 3px; background: linear-gradient(to bottom, var(--coral-primary), var(--sage-green)); border-radius: 2px;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="position: relative; margin-bottom: 50px;">
+                            <div style="position: absolute; left: -42px; top: -5px; width: 24px; height: 24px; background: var(--coral-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 0.8em; box-shadow: 0 2px 8px rgba(198, 123, 92, 0.3);">1</div>
+                            <div style="font-family: monospace; font-size: 0.95em; line-height: 1.8; color: var(--text-medium);">
+                                <strong style="color: var(--coral-primary);">Weeks 1-3:</strong> [PHASE 1] Brand Identity Development<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <strong style="color: var(--sage-green);">LOGO BOOK:</strong> 2-3 weeks | $1,250<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Professional transportation company identity<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Trust-building visual elements
+                            </div>
+                        </div>
+                        
+                        <div style="position: relative; margin-bottom: 50px;">
+                            <div style="position: absolute; left: -42px; top: -5px; width: 24px; height: 24px; background: var(--coral-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 0.8em; box-shadow: 0 2px 8px rgba(198, 123, 92, 0.3);">2</div>
+                            <div style="font-family: monospace; font-size: 0.95em; line-height: 1.8; color: var(--text-medium);">
+                                <strong style="color: var(--coral-primary);">Weeks 2-6:</strong> [PHASE 2] Landing Page Development<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <strong style="color: var(--sage-green);">OWNER-OPERATOR LANDING:</strong> 3-4 weeks | $1,500<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── High-converting recruitment page<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Mobile-optimized for truck drivers
+                            </div>
+                        </div>
+                        
+                        <div style="position: relative; margin-bottom: 50px;">
+                            <div style="position: absolute; left: -42px; top: -5px; width: 24px; height: 24px; background: var(--sage-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 0.8em; box-shadow: 0 2px 8px rgba(143, 166, 142, 0.3);">3</div>
+                            <div style="font-family: monospace; font-size: 0.95em; line-height: 1.8; color: var(--text-medium);">
+                                <strong style="color: var(--coral-primary);">Week 4+:</strong> [PHASE 3] Meta Ads Campaign Launch<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <strong style="color: var(--sage-green);">3 MONTH CONTRACT:</strong> $1,250/month<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── Quick testing and optimization<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <strong style="color: var(--sage-green);">6 MONTH CONTRACT:</strong> $1,000/month<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Long-term growth strategy<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Launch: Campaign setup (1 week) + Optimization (ongoing)
+                            </div>
+                        </div>
+                        
+                        <div style="position: relative;">
+                            <div style="position: absolute; left: -42px; top: -5px; width: 24px; height: 24px; background: var(--sage-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 0.7em; box-shadow: 0 2px 8px rgba(143, 166, 142, 0.3);">✓</div>
+                            <div style="font-family: monospace; font-size: 0.95em; line-height: 1.8; color: var(--text-medium);">
+                                <strong style="color: var(--sage-green);">Ongoing:</strong> [OPTIMIZATION] Lead Generation & Growth<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Continuous campaign optimization<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Weekly performance analysis<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Scale successful campaigns for more drivers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roi-highlight">
+                <h3>Investment Summary</h3>
+                    <div class="roi-stats">
+                        <div class="roi-stat">
+                            <div class="number">$2,750</div>
+                            <div class="label">Setup Investment<br><small>Brand + Landing Page</small></div>
+                        </div>
+                        <div class="roi-stat">
+                            <div class="number">$1,000</div>
+                            <div class="label">Monthly Service<br><small>6-month recommended</small></div>
+                        </div>
+                        <div class="roi-stat">
+                            <div class="number">4-6</div>
+                            <div class="label">weeks to launch<br><small>From start to first leads</small></div>
+                        </div>
+                        <div class="roi-stat">
+                            <div class="number">100+</div>
+                            <div class="label">qualified leads/month<br><small>With $3-4K ad budget</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-schedule">
+                <h2>Next Steps</h2>
+                <div class="payment-item">
+                    <span><strong>1. Proposal Approval</strong></span>
+                    <span>Choose your preferred timeline and budget</span>
+                </div>
+                <div class="payment-item">
+                    <span><strong>2. Down Payment</strong></span>
+                    <span>$500 (credited toward project cost)</span>
+                </div>
+                <div class="payment-item">
+                    <span><strong>3. Strategy Call</strong></span>
+                    <span>Detailed planning and requirements gathering</span>
+                </div>
+                <div class="payment-item">
+                    <span><strong>4. Brand Development Start</strong></span>
+                    <span>Logo concepts and brand identity creation</span>
+                </div>
+                <div class="payment-item">
+                    <span><strong>5. Landing Page Development</strong></span>
+                    <span>Owner-operator focused recruitment page</span>
+                </div>
+                <div class="payment-item">
+                    <span><strong>6. Campaign Launch</strong></span>
+                    <span>Meta Ads campaigns with lead generation</span>
+                </div>
+                
+                <div class="highlight" style="margin-top: 30px;">
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="cta-button" onclick="window.open('https://buy.stripe.com/28oeYY0wqa8V6ByeV4', '_blank')" style="background: linear-gradient(135deg, var(--coral-primary), var(--coral-light)); color: var(--warm-white); font-size: 1.1em; padding: 18px 40px; border-radius: 50px; border: none; cursor: pointer; transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); font-family: 'Satoshi', sans-serif; letter-spacing: 0.01em; display: inline-block; text-decoration: none; font-weight: 600; box-shadow: 0 4px 15px rgba(198, 123, 92, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(198, 123, 92, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(198, 123, 92, 0.3)'">
+                            Make $500 Down Payment
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div class="faq-item" style="background: var(--warm-white); border-radius: 12px; margin-bottom: 20px; overflow: hidden; border: 1px solid rgba(140, 118, 98, 0.12); transition: all 0.3s ease;">
+                        <div class="faq-question" style="padding: 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-dark); background: var(--cream);" onclick="toggleFAQ(this)">
+                            <span>How much does it cost to get one owner-operator?</span>
+                            <span class="faq-toggle" style="font-size: 1.3em; transition: transform 0.3s ease;">▼</span>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 25px; max-height: 0; overflow: hidden; transition: all 0.3s ease; color: var(--text-medium); line-height: 1.6;">
+                            <div style="padding: 25px 0;">
+                                <p>Based on industry averages: leads cost $15-30 each, with 5-15% converting to hires. So expect $200-600 in advertising cost per new driver, plus our monthly service fee. The exact cost depends on your offer competitiveness and follow-up process.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" style="background: var(--warm-white); border-radius: 12px; margin-bottom: 20px; overflow: hidden; border: 1px solid rgba(140, 118, 98, 0.12); transition: all 0.3s ease;">
+                        <div class="faq-question" style="padding: 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-dark); background: var(--cream);" onclick="toggleFAQ(this)">
+                            <span>Why focus only on Meta Ads instead of multiple platforms?</span>
+                            <span class="faq-toggle" style="font-size: 1.3em; transition: transform 0.3s ease;">▼</span>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 25px; max-height: 0; overflow: hidden; transition: all 0.3s ease; color: var(--text-medium); line-height: 1.6;">
+                            <div style="padding: 25px 0;">
+                                <p>For driver recruitment, Meta (Facebook & Instagram) offers the best combination of targeting precision, cost-effectiveness, and scale. We can reach drivers where they spend their downtime. While other platforms exist, starting with the most proven channel allows us to maximize your budget and get results faster.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" style="background: var(--warm-white); border-radius: 12px; margin-bottom: 20px; overflow: hidden; border: 1px solid rgba(140, 118, 98, 0.12); transition: all 0.3s ease;">
+                        <div class="faq-question" style="padding: 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-dark); background: var(--cream);" onclick="toggleFAQ(this)">
+                            <span>Do you have experience with transportation recruitment?</span>
+                            <span class="faq-toggle" style="font-size: 1.3em; transition: transform 0.3s ease;">▼</span>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 25px; max-height: 0; overflow: hidden; transition: all 0.3s ease; color: var(--text-medium); line-height: 1.6;">
+                            <div style="padding: 25px 0;">
+                                <p>Yes, we have successfully managed recruitment campaigns for several transportation and logistics companies. We understand the specific challenges and what motivates drivers, allowing us to create compelling ad campaigns that convert.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" style="background: var(--warm-white); border-radius: 12px; margin-bottom: 20px; overflow: hidden; border: 1px solid rgba(140, 118, 98, 0.12); transition: all 0.3s ease;">
+                        <div class="faq-question" style="padding: 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-dark); background: var(--cream);" onclick="toggleFAQ(this)">
+                            <span>What's the minimum advertising budget needed?</span>
+                            <span class="faq-toggle" style="font-size: 1.3em; transition: transform 0.3s ease;">▼</span>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 25px; max-height: 0; overflow: hidden; transition: all 0.3s ease; color: var(--text-medium); line-height: 1.6;">
+                            <div style="padding: 25px 0;">
+                                <p>We recommend starting with at least $3,000 to $4,000 per month. This allows for enough data collection and testing to optimize campaigns effectively and generate a consistent flow of leads. Budgets below this level may not produce enough volume for meaningful results.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="background: var(--warm-white); border-radius: 12px; margin-bottom: 20px; overflow: hidden; border: 1px solid rgba(140, 118, 98, 0.12); transition: all 0.3s ease;">
+                        <div class="faq-question" style="padding: 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-dark); background: var(--cream);" onclick="toggleFAQ(this)">
+                            <span>How quickly can we start getting leads?</span>
+                            <span class="faq-toggle" style="font-size: 1.3em; transition: transform 0.3s ease;">▼</span>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 25px; max-height: 0; overflow: hidden; transition: all 0.3s ease; color: var(--text-medium); line-height: 1.6;">
+                            <div style="padding: 25px 0;">
+                                <p>Once the landing page is live (approx. 4-6 weeks from start), we can launch the ad campaigns within a week. You can expect to see the first leads coming in within 24-48 hours of the campaigns going live.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Our Contacts</h2>
+                <p>Ready to build a trustworthy recruitment system for RND SAFE CARGO INC?</p>
+                
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.2);">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 800px; margin: 0 auto; text-align: left;">
+                        <div>
+                            <p style="margin-bottom: 15px;"><strong>Company:</strong> caste//s.media</p>
+                            <p style="margin-bottom: 15px;"><strong>Contact Person:</strong> Dmitriy Zaychenkov</p>
+                            <p style="margin-bottom: 15px;"><strong>Location:</strong> Roseville, California, USA</p>
+                            <p style="margin-bottom: 0;"><strong>Phone:</strong> <a href="tel:+19563153156" style="color: var(--warm-white); text-decoration: underline;">+1 (956) 315-315-6</a></p>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 15px;"><strong>Email:</strong> <a href="mailto:castellsagency@gmail.com" style="color: var(--warm-white); text-decoration: underline;">castellsagency@gmail.com</a></p>
+                            <p style="margin-bottom: 15px;"><strong>Website:</strong> <a href="https://castells.agency" target="_blank" style="color: var(--warm-white); text-decoration: underline;">castells.agency</a></p>
+                            <p style="margin-bottom: 15px;"><strong>Facebook:</strong> <a href="https://www.facebook.com/castells.media" target="_blank" style="color: var(--warm-white); text-decoration: underline;">facebook.com/castells.media</a></p>
+                            <p style="margin-bottom: 0;"><strong>Instagram:</strong> <a href="https://www.instagram.com/castells.media" target="_blank" style="color: var(--warm-white); text-decoration: underline;">instagram.com/castells.media</a></p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 40px; text-align: center;">
+                        <h3 style="color: var(--warm-white); margin-bottom: 25px; font-size: 1.3em;">Instant Communication</h3>
+                        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                            <a href="https://wa.me/19563153156" target="_blank" style="background: var(--sage-green); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(143, 166, 142, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(143, 166, 142, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(143, 166, 142, 0.3)'">
+                                WhatsApp
+                            </a>
+                            <a href="https://t.me/dmitriyzay" target="_blank" style="background: var(--coral-primary); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(198, 123, 92, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(198, 123, 92, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(198, 123, 92, 0.3)'">
+                                Telegram
+                            </a>
+                            <a href="mailto:castellsagency@gmail.com" style="background: var(--coral-light); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(212, 144, 111, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(212, 144, 111, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(212, 144, 111, 0.3)'">
+                                Email
+                            </a>
+                        </div>
+                        <p style="margin-top: 20px; opacity: 0.9; font-size: 0.95em;">Response within 30 minutes during business hours (9:00-18:00 PST)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; padding: 40px; color: var(--text-light); font-style: italic;">
+                <p>This proposal is specifically designed for RND SAFE CARGO INC owner-operator recruitment in South Florida by the caste//s.media team.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const toggle = element.querySelector('.faq-toggle');
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                if (otherAnswer !== answer) {
+                    otherAnswer.style.maxHeight = '0';
+                    otherAnswer.parentElement.querySelector('.faq-toggle').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            if (isOpen) {
+                // Close current
+                answer.style.maxHeight = '0';
+                toggle.style.transform = 'rotate(0deg)';
+            } else {
+                // Open current
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                toggle.style.transform = 'rotate(180deg)';
+            }
+        }
+        
+        // Open first question by default
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstFAQ = document.querySelector('.faq-question');
+            if (firstFAQ) {
+                setTimeout(() => toggleFAQ(firstFAQ), 500);
+            }
+        });
+    </script>
+</body>
+</html>
+```
